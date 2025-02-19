@@ -7,9 +7,9 @@ const __dirname = path.resolve()
 
 app.use('/', express.static(path.join(__dirname, './website/dist')))
 
-app.get('/', (req, res) => {
-  res.send("get  chlrha ha")
-})
+// app.get('/', (req, res) => {
+//   res.send("get  chlrha ha")
+// })
 
 app.get('/weather', (req, res) => {
   res.json({ user: 'tobi' })

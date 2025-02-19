@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.mjs",
   "scripts": {
-    "start":"node app.mjs",
+    "start": "concurrently \"npm run dev --prefix website\" \"node app.mjs\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -11,5 +11,8 @@
   "description": "",
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
   }
 }
